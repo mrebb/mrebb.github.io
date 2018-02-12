@@ -15,7 +15,7 @@ pl.v.updateRecord = {
       key = keys[i];
       record = Record.instances[key];
       optionEl = document.createElement("option");
-      optionEl.text = record.grade;
+      optionEl.text = record.studentName;
       optionEl.value = record.studentName;
       selectRecordEl.add( optionEl, null);
     }
@@ -51,7 +51,7 @@ pl.v.updateRecord = {
         };
     Record.update( slots);
     // update the selection list option
-    selectRecordEl.options[selectRecordEl.selectedIndex].text = slots.grade;
+    selectRecordEl.options[selectRecordEl.selectedIndex].text = slots.studentName;
     formEl.reset();
   }
 };
