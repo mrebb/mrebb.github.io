@@ -34,9 +34,9 @@ pl.v.updateRecord = {
         record=null, key = selectRecordEl.value;
     if (key) {
       record = Record.instances[key];
-      formEl.studentName.value = Record.studentName;
-      formEl.grade.value = Record.grade;
-      formEl.age.value = Record.age;
+      formEl.studentName.value = record.studentName;
+      formEl.grade.value = record.grade;
+      formEl.age.value = record.age;
     } else {
       formEl.reset();
     }
