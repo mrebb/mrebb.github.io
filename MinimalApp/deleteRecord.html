@@ -2,23 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Minimal JS Frontend App Example</title>
+  <title></title>
   <script src="src/c/initialize.js"></script>
-  <script src="src/m/Book.js"></script>
-  <script src="src/v/deleteBook.js"></script>
+  <script src="src/m/Record.js"></script>
+  <script src="src/v/deleteRecord.js"></script>
   <script>
-   window.addEventListener("load", pl.v.deleteBook.setupUserInterface);
+   window.addEventListener("load", pl.v.deleteRecord.setupUserInterface);
   </script>
 </head>
 <body>
  <header>
-  <h1>Delete a book record</h1>
+  <h1>Delete a student record</h1>
  </header>
  <main>
-  <form id="Book">
+  <form id="Record">
     <div>
-      <label>Select book: 
-        <select name="selectBook"><option value=""> --- </option></select>
+      <label>Select student: 
+        <select name="selectRecord"><option value=""> --- </option></select>
       </label>
     </div>
     <div><button type="button" name="commit">Delete</button></div>

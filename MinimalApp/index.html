@@ -4,7 +4,7 @@
  <meta charset="UTF-8" />
  <title>Minimal Plain JS App</title>
  <script src="src/c/initialize.js"></script>
- <script src="src/m/Book.js"></script>
+ <script src="src/m/Record.js"></script>
  <style>
  body{
    background-color: aqua;
@@ -27,15 +27,15 @@
 	Front-End Web Apps with Plain JavaScript</a>.
 	This app supports the following operations:</p>
  <menu>
-  <li><a href="createBook.html"><button type="button">Create</button></a> a new book record</li>
-  <li><a href="retrieveAndListAllBooks.html"><button type="button">Retrieve</button></a> and list all book records</li>
-  <li><a href="updateBook.html"><button type="button">Update</button></a> a book record</li>
-  <li><a href="deleteBook.html"><button type="button">Delete</button></a> a book record</li>
+  <li><a href="createRecord.html"><button type="button">Create</button></a> a new student record</li>
+  <li><a href="retrieveAndListAllRecords.html"><button type="button">Retrieve</button></a> and list all Record records</li>
+  <li><a href="updateRecord.html"><button type="button">Update</button></a> a student record</li>
+  <li><a href="deleteRecord.html"><button type="button">Delete</button></a> a student record</li>
   <hr />
-  <li><button type="button" onclick="Book.clearData()">Clear</button> database</li>
-  <li><button type="button" onclick="Book.generateTestData()">Generate</button> test data</li>
+  <li><button type="button" onclick="Record.clearData()">Clear</button> database</li>
+  <li><button type="button" onclick="Record.generateTestData()">Generate</button> test data</li>
     </menu>
-    <p>For playing with the app, you may first want to <button type="button" onclick="Book.generateTestData()">Generate test data</button> and then view it with <a href="retrieveAndListAllBooks.html"><button type="button">Retrieve and list all books</button></a>.
+    <p>For playing with the app, you may first want to <button type="button" onclick="Record.generateTestData()">Generate test data</button> and then view it with <a href="retrieveAndListAllRecords.html"><button type="button">Retrieve and list all students</button></a>.
      For observing the internal status and error messages, turn on the JavaScript console.</p>
     <p>This minimal version of our JavaScript front-end data management application only includes a minimum of the overall functionality
      required for a complete app. It takes care of only one object type ("books") and supports the four 
