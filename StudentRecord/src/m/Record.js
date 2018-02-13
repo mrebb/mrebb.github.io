@@ -80,16 +80,6 @@ Record.destroy = function (studentName) {
     console.log("There is no record with ISBN " + studentName + " in the database!");
   }
 };
-/*******************************************
-*** Auxiliary methods for testing **********
-********************************************/
-//  Create and save test data
-Record.generateTestData = function () {
-  Record.instances["006251587X"] = new Record({studentName:"006251587X", grade:"Weaving the Web", age:2000});
-  Record.instances["0465026567"] = new Record({studentName:"0465026567", grade:"Gödel, Escher, Bach", age:1999});
-  Record.instances["0465030793"] = new Record({studentName:"0465030793", grade:"I Am A Strange Loop", age:2008});
-  Record.saveAll();
-};
 //  Clear data
 Record.clearData = function () {
   if (confirm("Do you really want to delete all student record data?")) {
