@@ -14,7 +14,7 @@ pl.v.deleteRecord = {
       key = keys[i];
       record = Record.instances[key];
       optionEl = document.createElement("option");
-      optionEl.text = record.grade;
+      optionEl.text = record.studentName;
       optionEl.value = record.studentName;
       selectEl.add( optionEl, null);
     }
