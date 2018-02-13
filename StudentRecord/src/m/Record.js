@@ -77,7 +77,7 @@ Record.destroy = function (studentName) {
     console.log("Record " + studentName + " deleted");
     delete Record.instances[studentName];
   } else {
-    console.log("There is no record with ISBN " + studentName + " in the database!");
+    console.log("There is no record with student name " + studentName + " in the database!");
   }
 };
 //  Clear data
