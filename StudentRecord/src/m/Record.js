@@ -9,6 +9,7 @@ function Record( slots) {
   this.studentName = slots.studentName;
   this.grade = slots.grade;
   this.age = slots.age;
+  this.time = slots.time;
 };
 /***********************************************
  ***  Class-level ("static") properties  *******
@@ -43,6 +44,7 @@ Record.retrieveAll = function () {
     }
   }
 };
+
 //  Save all student record objects to Local Storage
 Record.saveAll = function () {
   var recordsString="", error=false,

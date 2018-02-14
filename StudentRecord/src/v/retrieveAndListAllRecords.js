@@ -16,6 +16,7 @@
       row.insertCell(-1).textContent = Record.instances[key].studentName;      
       row.insertCell(-1).textContent = Record.instances[key].grade;  
       row.insertCell(-1).textContent = Record.instances[key].age;
+      row.insertCell(-1).textContent = Record.instances[key].time;
     }
   }
 };

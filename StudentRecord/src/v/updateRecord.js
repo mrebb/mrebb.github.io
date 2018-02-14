@@ -45,9 +45,12 @@ pl.v.updateRecord = {
   handleSaveButtonClickEvent: function () {
     var formEl = document.forms['Record'],
         selectRecordEl = formEl.selectRecord;
+        var today = new Date();
+    var dateEl = today.toLocaleDateString();
     var slots = { studentName: formEl.studentName.value, 
           grade: formEl.grade.value, 
-          age: formEl.age.value
+          age: formEl.age.value,
+          time: dateEl
         };
     Record.update( slots);
     // update the selection list option
