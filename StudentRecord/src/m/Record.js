@@ -70,6 +70,7 @@ Record.update = function (slots) {
   var age = parseInt( slots.age);
   if (record.grade !== slots.grade) record.grade = slots.grade;
   if (record.age !== age) record.age = age;
+  alert("Record modified successfully");
   console.log("Record " + slots.studentName + " modified!");
 };
 //  Delete a student record row from persistent storage
@@ -77,6 +78,7 @@ Record.destroy = function (studentName) {
   if (Record.instances[studentName]) {
     console.log("Record " + studentName + " deleted");
     delete Record.instances[studentName];
+    alert("Record deleted successfully");
   } else {
     console.log("There is no record with student name " + studentName + " in the database!");
   }
