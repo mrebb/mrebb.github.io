@@ -27,7 +27,7 @@ pl.v.createRecord = {
     var slots = { studentName: formEl.studentName.value, 
         grade: formEl.grade.value, 
         age: formEl.age.value,
-        time:dateEl};
+        time: dateEl};
     Record.add( slots);
     formEl.reset();
   }

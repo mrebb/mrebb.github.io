@@ -61,8 +61,12 @@ Record.saveAll = function () {
 //  Create a new student record row
 Record.add = function (slots) {
   var record = new Record( slots);
+  var today = new Date();
+    var dateEl = today.toLocaleDateString();
+    record.time = dateEl;
   // add record to the Record.instances collection
   Record.instances[slots.studentName] = record;
+  
   alert("Record created successfully");
   console.log("Record " + slots.studentName + " created!");
 };
