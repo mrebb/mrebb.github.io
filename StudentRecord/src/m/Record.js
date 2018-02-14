@@ -74,8 +74,17 @@ Record.add = function (slots) {
 Record.update = function (slots) {
   var record = Record.instances[slots.studentName];
   var age = parseInt( slots.age);
-  if (record.grade !== slots.grade) record.grade = slots.grade;
-  if (record.age !== age) record.age = age;
+  var today = new Date();
+    var dateEl = today.toLocaleDateString();
+   
+  if (record.grade !== slots.grade){
+    record.time = dateEl;
+    record.grade = slots.grade;
+  } 
+  if (record.age !== age){
+    record.time = dateEl;
+    record.age = age;
+  }
   alert("Record modified successfully");
   console.log("Record " + slots.studentName + " modified!");
 };
