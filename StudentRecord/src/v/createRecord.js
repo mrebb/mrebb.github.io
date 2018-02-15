@@ -23,11 +23,16 @@ pl.v.createRecord = {
         time: dateEl};
 // This function will validate User name field.
     var uName = formEl.studentName.value;
-    var uName_len = uName.length;
-    if (uName_len == 0){
-      alert("User name field should not be empty");
+    var uGrade = formEl.grade.value;
+    var uAge = formEl.age.value;
+    var uNameLen = uName.length;
+    var uGradeLen = uGrade.length;
+    var uAgeLen = uAge.length;
+    if (uNameLen == 0 || uGradeLen == 0 || uAgeLen == 0){
+      alert("No field should be left empty");
     }
-    if(uName_len>0){
+    
+    if(uNameLen > 0 && uGradeLen > 0 && uAgeLen > 0){
       Record.add( slots);
     }
     formEl.reset();
