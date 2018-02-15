@@ -29,7 +29,7 @@ pl.v.createRecord = {
     var uGradeLen = uGrade.length;
     var uAgeLen = uAge.length;
     if (uNameLen == 0 || uGradeLen == 0 || uAgeLen == 0){
-      alert("No field should be left empty");
+      alert("No field should be left empty!");
     }
     
     if(uNameLen > 0 && uGradeLen > 0 && uAgeLen > 0){
