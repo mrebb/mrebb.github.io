@@ -1,6 +1,5 @@
 /**
- * @fileOverview  Contains various view functions for the use case listRecords
- * @author Gerd Wagner
+ Retrieve all the student records
  */
  pl.v.retrieveAndListAllRecords = {
   setupUserInterface: function () {
