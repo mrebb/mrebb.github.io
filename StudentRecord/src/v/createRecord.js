@@ -15,7 +15,7 @@ pl.v.createRecord = {
   // save user input data
   handleSaveButtonClickEvent: function () {
     var formEl = document.forms['Record'];
-    var today = new Date();
+    var today = (new Date()).toUTCString();
     var dateEl = today.toLocaleDateString();
     var slots = { studentName: formEl.studentName.value, 
         grade: formEl.grade.value, 
