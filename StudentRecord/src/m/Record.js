@@ -62,7 +62,7 @@ Record.saveAll = function () {
 Record.add = function (slots) {
   var record = new Record( slots);
   var today = new Date();
-    var dateEl = today.toLocaleDateString();
+    var dateEl = today.toUTCString();
     record.time = dateEl;
   // add record to the Record.instances collection
   Record.instances[slots.studentName] = record;
@@ -75,7 +75,7 @@ Record.update = function (slots) {
   var record = Record.instances[slots.studentName];
   var age = parseInt( slots.age);
   var today = new Date();
-    var dateEl = today.toLocaleDateString();
+    var dateEl = today.toUTCString();
    
   if (record.grade !== slots.grade){
     record.time = dateEl;
