@@ -15,13 +15,13 @@ pl.v.createRecord = {
   // save user input data
   handleSaveButtonClickEvent: function () {
     var formEl = document.forms['Record'];
-    var today = (new Date()).toUTCString();
-    var dateEl = today.toLocaleDateString();
+    var dateEl = (new Date()).toUTCString();
+    //var dateEl = today.toLocaleDateString();
     var slots = { studentName: formEl.studentName.value, 
         grade: formEl.grade.value, 
         age: formEl.age.value,
         time: dateEl};
-// This function will validate User name field.
+// This function will validate mandatory fields.
     var uName = formEl.studentName.value;
     var uGrade = formEl.grade.value;
     var uAge = formEl.age.value;
