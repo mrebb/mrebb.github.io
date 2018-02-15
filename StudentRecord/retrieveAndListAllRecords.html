@@ -10,6 +10,11 @@
    window.addEventListener("load",
        pl.v.retrieveAndListAllRecords.setupUserInterface);
  </script>
+<style>
+#records{
+  border: 1px solid black;
+}
+ </style>
 </head>
 <body>
  <header>
@@ -17,7 +22,7 @@
  </header>
  <main>
   <table id="records">
-   <thead><tr><th>Student-Name</th><th>Grade</th><th>Age</th><th>CreatedTime</th></tr></thead>
+   <thead><tr><th>Student-Name</th><th>Grade</th><th>Age</th><th>TimeStamp</th></tr></thead>
    <tbody></tbody>
   </table>
  </main>

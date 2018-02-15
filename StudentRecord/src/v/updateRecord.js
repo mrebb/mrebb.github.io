@@ -46,7 +46,7 @@ pl.v.updateRecord = {
     var formEl = document.forms['Record'],
         selectRecordEl = formEl.selectRecord;
         var today = new Date();
-    var dateEl = today.toLocaleDateString();
+    var dateEl = today.toUTCString();
     var slots = { studentName: formEl.studentName.value, 
           grade: formEl.grade.value, 
           age: formEl.age.value,
