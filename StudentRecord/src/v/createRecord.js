@@ -34,7 +34,8 @@ pl.v.createRecord = {
     
     if(uNameLen > 0 && uGradeLen > 0 && uAgeLen > 0){
       Record.add( slots);
+      formEl.reset();
     }
-    formEl.reset();
+   
   }
 };
