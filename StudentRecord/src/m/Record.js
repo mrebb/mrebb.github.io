@@ -77,16 +77,16 @@ Record.update = function (slots) {
   var today = new Date();
     var dateEl = today.toUTCString();
    
-  if (record.grade !== slots.grade){
+  if (record.grade !== slots.grade || record.age !== age){
     record.time = dateEl;
     record.grade = slots.grade;
-  } 
-  if (record.age !== age){
-    record.time = dateEl;
     record.age = age;
+    alert("Record modified successfully");
+    console.log("Record " + slots.studentName + " modified!");
   }
-  alert("Record modified successfully");
-  console.log("Record " + slots.studentName + " modified!");
+  else{
+    alert("Nothing changed!!");
+  }
 };
 //  Delete a student record row from persistent storage
 Record.destroy = function (studentName) {

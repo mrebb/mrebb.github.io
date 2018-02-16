@@ -52,9 +52,19 @@ pl.v.updateRecord = {
           age: formEl.age.value,
           time: dateEl
         };
+  // This function will validate mandatory fields
+    var uGrade = formEl.grade.value;
+    var uAge = formEl.age.value;
+    var uGradeLen = uGrade.length;
+    var uAgeLen = uAge.length;
+    if (uGradeLen == 0 || uAgeLen == 0){
+      alert("No field should be left empty!");
+    }
+    if(uGradeLen > 0 && uAgeLen > 0){
     Record.update( slots);
     // update the selection list option
     selectRecordEl.options[selectRecordEl.selectedIndex].text = slots.studentName;
     formEl.reset();
+    }
   }
 };
